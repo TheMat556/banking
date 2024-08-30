@@ -1,26 +1,31 @@
 {
   "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "bundler",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true,
+    "lib": ["dom", "dom.iterable", "esnext"],       // Includes DOM and latest ECMAScript features
+    "allowJs": true,                                // Allows JavaScript files to be compiled
+    "skipLibCheck": true,                           // Skips type checking of declaration files
+    "strict": true,                                 // Enables all strict type-checking options
+    "noEmit": true,                                 // Disables emitting files from the TypeScript compiler
+    "esModuleInterop": true,                        // Enables interoperability between CommonJS and ES modules
+    "module": "esnext",                             // Sets the module system to ESNext
+    "moduleResolution": "bundler",                  // Uses bundler module resolution to support various imports
+    "resolveJsonModule": true,                      // Allows importing JSON files
+    "isolatedModules": true,                        // Ensures that each file can be transpiled individually
+    "jsx": "preserve",                              // Keeps JSX syntax as-is for Next.js to handle
+    "incremental": true,                            // Enables incremental compilation for faster builds
     "plugins": [
       {
-        "name": "next"
+        "name": "next"                              // Includes Next.js specific TypeScript settings
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"]                                // Sets up path aliasing for simplified imports
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",                                // Includes Next.js type definitions
+    "**/*.ts",                                      // Includes all TypeScript files
+    "**/*.tsx",                                     // Includes all TypeScript JSX files
+    ".next/types/**/*.ts"                           // Includes generated Next.js types
+  ],
+  "exclude": ["node_modules"]                       // Excludes node_modules from compilation
 }
