@@ -16,14 +16,7 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true,
-      "security": {
-        "noDangerouslySetInnerHtmlWithChildren": "error"
-      },
-      "suspicious": {
-        "noCommentText": "error",
-        "noDuplicateJsxProps": "error"
-      }
+      "recommended": true
     },
     "ignore": ["**/node_modules", "**/.next", "**/build", "**/dist"]
   },
