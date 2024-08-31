@@ -1,7 +1,17 @@
 {
-  "extends": "next/core-web-vitals",
+  "extends": [
+    "plugin:react/recommended",
+    "next/core-web-vitals"
+  ],
+  "plugins": [
+    "react"
+  ],
   "parserOptions": {
-    "project": "./tsconfig.json"
+    "project": "./tsconfig.json",
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
   },
   "rules": {
     "indent": [
@@ -11,6 +21,34 @@
     "quotes": [
       "error",
       "single"
+    ],
+    "react/jsx-one-expression-per-line": [
+      1,
+      {
+        "allow": "none"
+      }
+    ],
+    "react/jsx-max-props-per-line": [
+      "error",
+      {
+        "maximum": 1
+      }
+    ],
+    "newline-before-return": "error",
+    "newline-per-chained-call": [
+      "error",
+      {
+        "ignoreChainWithDepth": 2
+      }
+    ],
+    "react/jsx-wrap-multilines": [
+      "error",
+      {
+        "declaration": true,
+        "assignment": true,
+        "return": true,
+        "arrow": true
+      }
     ]
   }
 }

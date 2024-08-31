@@ -5,5 +5,10 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <main>sidebar{children}</main>;
-}
+  return (
+    <main>
+      sidebar
+      {children}
+    </main>
+  );
+};
