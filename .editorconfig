@@ -1,0 +1,11 @@
+# Top-most EditorConfig file. Set to true to stop searching for other .editorconfig files.
+root = true
+
+# Global settings (apply to all files)
+[*]
+indent_style = space # Use spaces for indentation
+indent_size = 2 # Set indentation size to 4 spaces
+end_of_line = lf # Use Unix-style line endings
+charset = utf-8 # Use UTF-8 character encoding
+trim_trailing_whitespace = true # Remove trailing whitespace
+insert_final_newline = true # Ensure the file ends with a newline
