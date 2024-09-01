@@ -7,7 +7,7 @@
     "indentWidth": 2,
     "lineEnding": "lf",
     "lineWidth": 80,
-    "attributePosition": "auto",
+    "attributePosition": "multiline",
     "ignore": ["**/node_modules", "**/.next", "**/build", "**/dist"]
   },
   "organizeImports": {
@@ -16,7 +16,10 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true
+      "recommended": true,
+      "correctness": {
+        "noUnusedImports": "error"
+      }
     },
     "ignore": ["**/node_modules", "**/.next", "**/build", "**/dist"]
   },
@@ -28,7 +31,7 @@
       "semicolons": "always",
       "arrowParentheses": "always",
       "bracketSpacing": true,
-      "bracketSameLine": false,
+      "bracketSameLine": true,
       "quoteStyle": "single",
       "attributePosition": "auto"
     }
