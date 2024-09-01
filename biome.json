@@ -8,7 +8,7 @@
     "lineEnding": "lf",
     "lineWidth": 80,
     "attributePosition": "multiline",
-    "ignore": ["**/node_modules", "**/.next", "**/build", "**/dist"]
+    "ignore": ["node_modules", ".next", "build", "dist", "types", "lib"]
   },
   "organizeImports": {
     "enabled": true
@@ -21,7 +21,7 @@
         "noUnusedImports": "error"
       }
     },
-    "ignore": ["**/node_modules", "**/.next", "**/build", "**/dist"]
+    "ignore": ["node_modules", ".next", "build", "dist", "types", "lib"]
   },
   "javascript": {
     "formatter": {
