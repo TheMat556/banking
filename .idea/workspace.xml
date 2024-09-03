@@ -4,29 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9085565-50af-46a0-ab46-e40400a93ebe" name="Changes" comment="commit intermediate">
-      <change afterPath="$PROJECT_DIR$/biome.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLinters/eslint.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+    <list default="true" id="b9085565-50af-46a0-ab46-e40400a93ebe" name="Changes" comment="lint and formatting, biomejs, gitignore">
+      <change afterPath="$PROJECT_DIR$/app/(root)/my-banks/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/(root)/payment-transfer/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/(root)/transaction-history/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/BankCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/MobileNav.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/RightSidebar.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.prettierignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.prettierrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(auth)/sign-in/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(auth)/sign-in/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(auth)/sign-up/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(auth)/sign-up/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(root)/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(root)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bun.lockb" beforeDir="false" afterPath="$PROJECT_DIR$/bun.lockb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/HeaderBox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/HeaderBox.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/TotalBalanceBox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/TotalBalanceBox.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
   </component>
   <component name="FormatOnSaveOptions">
     <option name="myRunOnSave" value="true" />
@@ -54,25 +58,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;eslint.code.style.apply.dismiss&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/matth/OneDrive/Desktop/tst/my-app&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\dev\\workspace\\banking\\node_modules\\prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\dev\\workspace\\banking\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "eslint.code.style.apply.dismiss": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/matth/OneDrive/Desktop/tst/my-app",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "C:\\dev\\workspace\\banking\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "/Users/matthiashader/Documents/development/webdevelopment/banking/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\dev\workspace\banking" />
@@ -81,7 +85,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-WS-242.20224.426" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-WS-241.18034.50" />
       </set>
     </attachedChunks>
   </component>
@@ -109,7 +113,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725133750359</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="lint and formatting, biomejs, gitignore">
+      <option name="closed" value="true" />
+      <created>1725219981222</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1725219981222</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,6 +129,19 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit intermediate" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit intermediate" />
+    <MESSAGE value="lint and formatting, biomejs, gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="lint and formatting, biomejs, gitignore" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/BankCard.tsx</url>
+          <line>11</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

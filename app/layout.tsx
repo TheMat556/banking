@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import React from 'react';
 import { IBM_Plex_Serif, Inter } from 'next/font/google';
 
 import './globals.css';
