@@ -27,6 +27,14 @@ const AuthForm = ({ type }: { type: string }) => {
     defaultValues: {
       email: '',
       password: '',
+      firstName: '',
+      lastName: '',
+      address1: '',
+      city: '',
+      state: '',
+      postalCode: '',
+      dateOfBirth: '',
+      ssn: '',
     },
   });
 
@@ -99,13 +107,13 @@ const AuthForm = ({ type }: { type: string }) => {
                   <div className='flex gap-4'>
                     <CustomInput
                       control={form.control}
-                      name='lastname'
+                      name='lastName'
                       label='Last name'
                       placeholder='Enter your last name'
                     />
                     <CustomInput
                       control={form.control}
-                      name='firstname'
+                      name='firstName'
                       label='First name'
                       placeholder='Enter your first name'
                     />
